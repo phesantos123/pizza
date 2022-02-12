@@ -17,8 +17,11 @@ import {v4 as uuid } from "uuid";
     @Column()
     admin: boolean;
 
+<<<<<<< HEAD
    
     
+=======
+>>>>>>> eac0d67da05a70d5879b50f763d21285e645ceca
     @CreateDateColumn()
     created_at: Date;
 
