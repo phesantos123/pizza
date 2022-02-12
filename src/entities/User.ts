@@ -17,10 +17,6 @@ import {v4 as uuid } from "uuid";
     @Column()
     admin: boolean;
 
-    //@Exclude()
-    @Column()
-    password: string;
-    
     @CreateDateColumn()
     created_at: Date;
 
