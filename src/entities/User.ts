@@ -17,10 +17,6 @@ import {v4 as uuid } from "uuid";
     @Column()
     admin: boolean;
 
-    //@Exclude()
-    @Column()
-    password: string;
-    
     @CreateDateColumn()
     created_at: Date;
 
@@ -28,7 +24,7 @@ import {v4 as uuid } from "uuid";
     updated_at: Date;
 
     constructor (){
-
+        
         if(!this.id){
             this.id = uuid();
         }
