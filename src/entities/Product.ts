@@ -1,9 +1,9 @@
 import {Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn} from "typeorm";
 import {v4 as uuid } from "uuid";
 
-@Entity('users')
+@Entity('product')
 
- class User {
+ class Product {
 
     @PrimaryColumn()
     readonly id: string;
@@ -12,10 +12,10 @@ import {v4 as uuid } from "uuid";
     name: string;
 
     @Column()
-    login: string;
+    price: number;
 
     @Column()
-    admin: boolean;
+    description: string;
 
     @CreateDateColumn()
     created_at: Date;
@@ -32,4 +32,4 @@ import {v4 as uuid } from "uuid";
 
 }
 
-export { User }
+export { Product }
