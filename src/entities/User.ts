@@ -13,6 +13,9 @@ import {v4 as uuid } from "uuid";
 
     @Column()
     login: string;
+    
+    @Column()
+    password: string;
 
     @Column()
     admin: boolean;
